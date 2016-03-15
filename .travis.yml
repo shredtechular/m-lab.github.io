@@ -3,10 +3,6 @@ rvm:
   - 2.2.3
 script:
   - ./_tests/travis-checks.sh
-branches:
-  only:
-  - master
-  - gh-pages
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
