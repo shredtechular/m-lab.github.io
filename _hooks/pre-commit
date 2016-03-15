@@ -8,15 +8,39 @@
 # usage: make a soft link to this file,
 # e.g., ln -s ~/config/pre-commit.git.sh ~/some_project/.git/hooks/pre-commit
 
-if test "$(git diff --check --cached)"
-then
+#if test "$(git diff --check --cached)"
+#then
+#  echo "**********************************************************"
+#  echo -e "*  \033[31mCOMMIT ABORTED! Please removing trailing whitespaces.\033[0m"
+#  echo -e "*  This can be done automatically for each file by using the following command:"
+#  echo -e "*  \033[46msed -ie 's/[[:space:]]*$//' <filename>\033[0m"
+#  echo "**********************************************************"
+#  echo ""
+#  git diff --check --cached
+#else
+#	exit 0
+#fi
+
+#./_tests/travis-checks.sh
+
+#set -e # halt script on error
+
+#if test "$(bundle exec htmlproofer ./_site --only-4xx --check-html --file-ignore "/mlab_observatory/" --disable-external)"
+#	then
+#	 echo "hello"
+#else
+#		 echo "success?"
+#	exit 0
+#fi
+
+./_tests/travis-checks.sh --disable-external
+if [ $? ]; then
   echo "**********************************************************"
-  echo -e "*  \033[31mCOMMIT ABORTED! Please removing trailing whitespaces.\033[0m"
+  echo -e "*  \033[31mCOMMIT ABORTED! Please address the errors before commiting.\033[0m"
   echo -e "*  This can be done automatically for each file by using the following command:"
   echo -e "*  \033[46msed -ie 's/[[:space:]]*$//' <filename>\033[0m"
   echo "**********************************************************"
   echo ""
-  git diff --check --cached
 else
-	exit 0
+    exit 0
 fi

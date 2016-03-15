@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 # Travis will change it to "" before deploying.
 # For local development pass in blank baseurl to simulate prod-like environment: 
 # $ jekyll serve --baseurl
-baseurl: "/m-lab.github.io"
+baseurl: ""
 
 # Build settings
 permalink: "/blog/:title/"
