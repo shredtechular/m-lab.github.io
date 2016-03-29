@@ -4,10 +4,6 @@
   padding-bottom: 0;
   @include list_bullets();
 
-  .tabbed-heading {
-    margin-bottom: 18px;
-  }
-
   li h2:first-child {
     margin-bottom: 18px;
     cursor: pointer;
