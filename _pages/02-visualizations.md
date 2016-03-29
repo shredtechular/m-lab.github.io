@@ -6,8 +6,7 @@ page-title: "Performance"
 menu-item: true
 breadcrumb: visualizations
 accordion:
-  - heading: "Broadband performance statistics using NDT data"
-  - heading: "Packet loss video using NDT data"
+  num-of-headings: 2
 ---
 
 # Visualizations of network performance
@@ -18,6 +17,9 @@ some ways in which smart people have turned open data into powerful
 visualizations.
 
 {% capture accordion_entry_1 %}
+## Broadband performance statistics using NDT data
+<!--accordion-header-content-separator-->
+
 <p><iframe class="customIframe" style="font-size: 11px; line-height: 24px;" src="https://www.google.com/publicdata/embed?ds=e9krd11m38onf_&amp;ctype=m&amp;strail=false&amp;bcs=d&amp;nselm=s&amp;met_s=number_of_tests&amp;scale_s=lin&amp;ind_s=false&amp;met_c=download_throughput&amp;scale_c=lin&amp;ind_c=false&amp;ifdim=country&amp;hl=en_US&amp;dl=en_US&amp;ind=false&amp;xMax=180&amp;xMin=-180&amp;yMax=-79.97571094413946&amp;yMin=84.17339026552769&amp;mapType=t&amp;icfg&amp;iconSize=0.5" name="customIframe_0" width="960" height="500" frameborder="0" marginwidth="960" marginheight="500"></iframe></p>
 
 The charts presented in this section visualize data collected by M-Lab's Network Diagnostic Tool ([NDT]({{ site.baseurl }}/tools/ndt/)).  Of the many metrics collected by NDT, these charts visualize just a small subset (such as **download throughput**, **upload throughput**, **round trip time**, and **packet retransmission**).
@@ -62,6 +64,8 @@ Each bubble corresponds to a country. When you mouse over any bubble, the chart 
 {% endcapture %}
 
 {% capture accordion_entry_2 %}
+## Packet loss video using NDT data
+<!--accordion-header-content-separator-->
 
 View a quick and dreamy video showing packet loss, as measured by M-Lab's NDT.
 

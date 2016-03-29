@@ -4,8 +4,7 @@ permalink: /transparency/
 title: "Transparency"
 breadcrumb: visualizations
 accordion:
-  - heading: "Network neutrality map using Glasnost data"
-  - heading: "Deep packet inspection using Glasnost data"
+  num-of-headings: 2
 ---
 
 # Transparency
@@ -13,6 +12,8 @@ accordion:
 Transparency visualizations showcase ways in which people have used M-Lab data to expose what's going on under the hood. From ISP throttling to deep packet inspection, we invite those interested to shed sunlight, and we highlight the results here.
 
 {% capture accordion_entry_1 %}
+## Network neutrality map using Glasnost data
+<!--accordion-header-content-separator-->
 
 A research team in France analyzed M-Lab's Glasnost data to create an intelligible global ranking of net neutrality.
 
@@ -23,6 +24,8 @@ For more information, go to http://netneutralitymap.org.
 {% endcapture %}
 
 {% capture accordion_entry_2 %}
+## Deep packet inspection using Glasnost data
+<!--accordion-header-content-separator-->
 
 A cross-disciplinary team at the Syracuse University School of Information Studies and TU Delft dug into M-Lab's glasnost data to determine not only what percentage of ISPs were throttling traffic, but how many were using deep packet inspection to fascilitate this throttling.
 

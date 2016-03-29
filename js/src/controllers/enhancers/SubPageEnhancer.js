@@ -14,10 +14,14 @@ function(
   return {
     run: function() {
 
+      // Add Table of Contents if necessary
+      $('#toc').toc();
+
       // Subpage Accordions
       var accordion = $('.accordion'),
         listItem = accordion.children('li'),
-        heading = listItem.find('.tabbed-heading'),
+//        heading = listItem.find('.tabbed-heading'),
+        heading = listItem.find('h2:first'),
         content = listItem.find('.accordion-content').hide();
 
       //Open first entry of each accordion

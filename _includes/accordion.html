@@ -32,12 +32,20 @@
 <div class="info-section accordion-section">
   <ul class="accordion is-collapsed">
 
-    {% for entry in page.[acc_name] %}
+    {% comment %} <!-- Get number of accordion items set in page frontmatter --> {% endcomment %}
+    {% assign acc_index = page.[acc_name].num-of-headings %}
+
+    {% for i in (1..acc_index) %}
       {% capture accordion_section %}accordion_entry_{{ forloop.index }}{% endcapture %}
+      {% assign accordionArray = [accordion_section] | markdownify | split: '<!--accordion-header-content-separator-->' %}
     
     <li class="accordion-entry">
-      <h2 class="tabbed-heading">{{ entry.heading }}</h2>
-      <div class="accordion-content">{{ [accordion_section] | markdownify }}</div>
+      {% if page.header-ids %}
+        <h2 class="tabbed-heading">{{ accordionArray.first | strip_html }}</h2>
+      {% else %}
+        {{ accordionArray.first }}
+      {% endif %}
+      <div class="accordion-content">{{ accordionArray.last }}</div>
     </li>
     
     {% endfor %}

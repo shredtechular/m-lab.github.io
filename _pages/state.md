@@ -4,9 +4,7 @@ permalink: /state/
 title: "State"
 breadcrumb: visualizations
 accordion:
-  - heading: "RIPEstat Widgets to Explore Networks&#39; Activity"
-  - heading: "How many M-Lab tests? How much M-Lab data?"
-  - heading: "Distribution of NDT tests"
+  num-of-headings: 3
 ---
 
 # State
@@ -14,6 +12,8 @@ accordion:
 Here we highlight visualizations that illuminate the state of networks and M-Lab measurement. These look at the framework within which network performance and transparency testing happen, and expose this in easy to understand visualizations.
 
 {% capture accordion_entry_1 %}
+## RIPEstat Widgets to Explore Networks&#39; Activity
+<!--accordion-header-content-separator-->
 
 [RIPEstat](https://stat.ripe.net/){:target="_blank"} is a web-based interface developed by the [RIPE NCC](http://www.ripe.net/){:target="_blank"} featuring visualization widgets and data APIs dedicated to making sense of Internet data. RIPEstat now includes:
 
@@ -42,6 +42,8 @@ ripestat.init("network-activity",{"resource":"193.0.0.0/10"},null,{"show_control
 {% endcapture %}
 
 {% capture accordion_entry_2 %}
+## How many M-Lab tests? How much M-Lab data?
+<!--accordion-header-content-separator-->
 
 ## Total number of tests and total amount of data
 
@@ -65,6 +67,8 @@ This graph shows the total amount of data collected daily on the M-Lab platform.
 {% endcapture %}
 
 {% capture accordion_entry_3 %}
+## Distribution of NDT tests
+<!--accordion-header-content-separator-->
 
 Since the dawn of M-Lab (2009), see every NDT test ever run appear over time as a small dot on a vast map.
 

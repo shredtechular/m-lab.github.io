@@ -3,22 +3,13 @@ layout: page
 permalink: /publications/
 title: "Publications"
 menu-item: true
+header-ids: true
 papers-accordion:
-  - heading: "2014"
-  - heading: "2013"
-  - heading: "2012"
-  - heading: "2011"
-  - heading: "2010"
-  - heading: "2008"
+  num-of-headings: 6
 presentation-accordion:
-  - heading: "2012"
+  num-of-headings: 1
 other-docs-accordion:
-  - heading: "M-Lab Two-Pager"
-  - heading: "M-Lab server specifications for contributors"
-  - heading: "How to get involved with M-Lab"
-  - heading: "Requirements and procedure for approval of new M-Lab tools"
-  - heading: "M-Lab Roles and Responsibilities"
-  - heading: "M-Lab's founding vision document"
+  num-of-headings: 6
 ---
 
 # Papers, presentations and other documents
@@ -29,6 +20,9 @@ Papers and presentations that describe the M-Lab platform, tools and data as wel
 # Papers
 
 {% capture accordion_entry_1 %}
+## 2014
+<!--accordion-header-content-separator-->
+
 ### ISP Interconnection and its Impact on Consumer Internet Performance - A Measurement Lab Consortium Technical Report
 
 {:.paper-description}
@@ -51,6 +45,9 @@ E. Masala, A. Servetti, S. Basso, J. C. De Martin
 {% endcapture %}
 
 {% capture accordion_entry_2 %}
+## 2013
+<!--accordion-header-content-separator-->
+
 ### Visualizing Internet-Measurements Data for Research Purposes: the NeuViz Data Visualization Tool
 
 {:.paper-description}
@@ -93,6 +90,9 @@ Office of Engineering and Technology and Consumer and Governmental Affairs Burea
 {% endcapture %}
 
 {% capture accordion_entry_3 %}
+## 2012
+<!--accordion-header-content-separator-->
+
 ### Broadband Access to the Internet via Mobile Interfaces
 
 {:.paper-description}
@@ -155,6 +155,9 @@ H. Asghari, M. van Eeten, M. Mueller.
 {% endcapture %}
 
 {% capture accordion_entry_4 %}
+## 2011
+<!--accordion-header-content-separator-->
+
 ### Broadband Internet Performance: A View From the Gateway
 
 {:.paper-description}
@@ -187,6 +190,9 @@ P. Kanuparthy, C. Dovrolis
 {% endcapture %}
 
 {% capture accordion_entry_5 %}
+## 2010
+<!--accordion-header-content-separator-->
+
 ### Measurement Lab: Overview and an Invitation to the Research Community
 
 {:.paper-description}
@@ -229,6 +235,9 @@ M. Dischinger, M. Marcon, S. Guha, K. P. Gummadi, R. Mahajan, S. Saroiu.
 {% endcapture %}
 
 {% capture accordion_entry_6 %}
+## 2008
+<!--accordion-header-content-separator-->
+
 ### Pathdiag: Automated TCP Diagnosis
 
 {:.paper-description}
@@ -255,6 +264,9 @@ M. Dischinger, A. Mislove, A. Haeberlen, K. P. Gummadi
 # Presentations
 
 {% capture accordion_entry_1 %}
+## 2012
+<!--accordion-header-content-separator-->
+
 ### M-Lab at IMC
 
 {:.paper-description}
@@ -282,6 +294,9 @@ Presented at the OECD - WPIIS, December 14 2012
 # Other documents
 
 {% capture accordion_entry_1 %}
+## M-Lab Two-Pager
+<!--accordion-header-content-separator-->
+
 {:.paper-description}
 A brief overview of M-Lab
 
@@ -290,6 +305,9 @@ A brief overview of M-Lab
 {% endcapture %}
 
 {% capture accordion_entry_2 %}
+## M-Lab server specifications for contributors
+<!--accordion-header-content-separator-->
+
 {:.paper-description}
 A detailed technical review of the specifications and requirements for M-Lab server hosts
 
@@ -298,6 +316,9 @@ A detailed technical review of the specifications and requirements for M-Lab ser
 {% endcapture %}
 
 {% capture accordion_entry_3 %}
+## How to get involved with M-Lab
+<!--accordion-header-content-separator-->
+
 {:.paper-description}
 An overview of ways to join and support the M-Lab consortium
 
@@ -306,6 +327,9 @@ An overview of ways to join and support the M-Lab consortium
 {% endcapture %}
 
 {% capture accordion_entry_4 %}
+## Requirements and procedure for approval of new M-Lab tools
+<!--accordion-header-content-separator-->
+
 {:.paper-description}
 Enumerating the requirements and process for approval of a new measurement tool on the M-Lab platform.
 
@@ -314,6 +338,9 @@ Enumerating the requirements and process for approval of a new measurement tool 
 {% endcapture %}
 
 {% capture accordion_entry_5 %}
+## M-Lab Roles and Responsibilities
+<!--accordion-header-content-separator-->
+
 {:.paper-description}
 An outline for the roles and responsibilities for M-Lab operations and researchers using the platform.
 
@@ -322,6 +349,9 @@ An outline for the roles and responsibilities for M-Lab operations and researche
 {% endcapture %}
 
 {% capture accordion_entry_6 %}
+## M-Lab's founding vision document
+<!--accordion-header-content-separator-->
+
 {:.paper-description}
 The founding vision and operational procedures of the M-Lab measurement consortium, as laid out in 2009
 
